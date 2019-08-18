@@ -1,19 +1,124 @@
-ht
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Game</title>
+    <title>Psychic - Game</title>
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Pyschic Game</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-12">
+                <h1>Psychic - Game</h1>
+            </div>
+        </div>
+        <div class="row game-container">
+            <div class="col-lg-6">
+                <h5>Guess what letter I'm thinking of...</h5>
+                <p>The game is simple:</p>
+                <ol class="mt-5">
+                    <li>You get only so many guesses...</li>
+                    <li>Win and losses will be tracked till the page is reset...</li>
+                    <li>So, you think you're able to guess what letter im thinking?</li>
+                </ol>
+                <p id="userchoice-text"></p>
+                <p id="userchoice-text"></p>
+                <p id="computerchoice-text"></p>
+            </div>
+            <div class="col-lg-6 game-col">
+                <div class="row mt-5">
+                    <div class="col-lg-12">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Games Won</th>
+                                    <th scope="col">Games Lost</th>
+                                    <th scope="col">Guesses Left</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="wins-text">0</td>
+                                    <td id="losses-text">0</td>
+                                    <td id="guesses-text">0</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-12">
+                        <table class="table table-sm test">
+                            <tbody>
+                                <tr>
+                                    <td class="reset" id="a">A</tdX>
+                                    <td class="reset" id="b">B</td>
+                                    <td class="reset" id="c">C</td>
+                                    <td class="reset" id="d">D</td>
+                                    <td class="reset" id="e">E</td>
+                                    <td class="reset" id="f">F</td>
+                                </tr>
+                                <tr>
+                                    <td class="reset" id="g">G</td>
+                                    <td class="reset" id="h">H</td>
+                                    <td class="reset" id="i">I</td>
+                                    <td class="reset" id="j">J</td>
+                                    <td class="reset" id="k">K</td>
+                                    <td class="reset" id="l">L</td>
+                                </tr>
+                                <tr>
+                                    <td class="reset" id="m">M</td>
+                                    <td class="reset" id="n">N</td>
+                                    <td class="reset" id="o">O</td>
+                                    <td class="reset" id="p">P</td>
+                                    <td class="reset" id="q">Q</td>
+                                    <td class="reset" id="r">R</td>
+                                </tr>
+                                <tr>
+                                    <td class="reset" id="s">S</td>
+                                    <td class="reset" id="t">T</td>
+                                    <td class="reset" id="u">U</td>
+                                    <td class="reset" id="v">V</td>
+                                    <td class="reset" id="w">W</td>
+                                    <td class="reset" id="x">X</td>
+                                </tr>
+                                <tr>
+                                    <td class="reset" id="y">Y</td>
+                                    <td class="reset" id="z">Z</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
-<script type="text/javascript" src="assets/javascript/game.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+<script type="text/javascript" src="assets/javascript/games.js"></script>
 
 </html>
