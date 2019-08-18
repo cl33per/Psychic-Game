@@ -26,7 +26,6 @@ document.onkeyup = function (event) {
     var userGuess = event.key.toLowerCase();;
 
     // Randomly chooses a choice from the options array. This is the Computer's guess.
-    computerMem()
     
     // This logic determines the outcome of the game (win/loss/tie), and increments the appropriate number
     if (userGuess === computerGuess) {
@@ -37,10 +36,10 @@ document.onkeyup = function (event) {
     if (guesses === 0) {
         losses++
         guesses = 10;
-        computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length - 1)];
+         computerGuess = randomizeGuess();
     }
-function computerMem(){
-    var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];    
+function randomizeGuess(computerGuess){
+    return computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 }
 
 
