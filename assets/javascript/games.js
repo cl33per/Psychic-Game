@@ -13,7 +13,7 @@ var directionsText = document.getElementById("directions-text");
 var userChoiceText = document.getElementById("userchoice-text");
 var userwonText = document.getElementById("userwon-text");
 var userlostText = document.getElementById("userlost-text");
-var computerChoiceText = document.getElementById("computerchoice-text");
+// var computerChoiceText = document.getElementById("computerchoice-text");
 var winsText = document.getElementById("wins-text");
 var lossesText = document.getElementById("losses-text");
 var guessesText = document.getElementById("guesses-text");
@@ -82,7 +82,7 @@ document.onkeyup = function (event) {
 
     // Display the user and computer guesses, and wins/losses/ties.
     userChoiceText.textContent = "You chose: " + userGuess;
-    computerChoiceText.textContent = "The computer chose: " + computerGuess;
+    // computerChoiceText.textContent = "The computer chose: " + computerGuess;
     winsText.textContent = wins;
     lossesText.textContent = losses;
     guessesText.textContent = guesses;
