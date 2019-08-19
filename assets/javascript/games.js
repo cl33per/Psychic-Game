@@ -17,7 +17,7 @@ var computerChoiceText = document.getElementById("computerchoice-text");
 var winsText = document.getElementById("wins-text");
 var lossesText = document.getElementById("losses-text");
 var guessesText = document.getElementById("guesses-text");
-
+var gueesedLetters = [];
 var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
    function resetcolors() {
@@ -67,7 +67,7 @@ userwonText.textContent = " ";
         guesses = 10;
         computerGuess = randomizeGuess();
         resetcolors();
-    } else {
+    } else if ((gueesedLetters.includes(userGuess) === false)) {
         guesses--;
         document.getElementById(event.key).style.color = "#222";
     }
@@ -84,7 +84,7 @@ userwonText.textContent = " ";
         return computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     }
 
-
+    if (gueesedLetters.includes(userGuess) === false) gueesedLetters.push(userGuess);
     // Display the user and computer guesses, and wins/losses/ties.
     
     userChoiceText.textContent = "You chose: " + userGuess;
