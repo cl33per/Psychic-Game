@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Word Gusess Game</title>
+    <title>Psychic - Game</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,20 +16,25 @@
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Psychic Guessing Game </a>
+            <a class="navbar-brand" href="#">Pyschic Game</a>
         </nav>
     </header>
+
     <div class="container mt-5">
         <div class="row game-container">
             <div class="col-lg-6">
-                <h5>Guess the letter?!</h5>
+                <h5>Guess what letter I'm thinking of...</h5>
                 <p>The game is simple:</p>
                 <ol class="mt-5">
                     <li>You get only so many guesses...</li>
-                    <li>Wins will be tracked until the page is refreshed...</li>
+                    <li>Wins and losses will be tracked umtill the page is refreshed...</li>
                     <li>So... do you think you're able to guess what letter im thinking?</li>
                     <li>Type any letter to get started...</li>
+                    
                 </ol>
+                <p id="userchoice-text"></p>
+                <p id="computerchoice-text"></p>
+                <p id="userwon-text"></p>
             </div>
             <div class="col-lg-6 game-col">
                 <div class="row mt-5">
@@ -38,17 +43,15 @@
                             <thead>
                                 <tr>
                                     <th scope="col">Games Won</th>
-                                    <th scope="col">Guesses Lost</th>
-                                    <th scope="col">Current Letter</th>
+                                    <th scope="col">Games Lost</th>
                                     <th scope="col">Guesses Left</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td id="Wins">0</td>
-                                    <td id="losses">0</td>
-                                    <td id="currentWord">0</td>
-                                    <td id="remainingGuesses">0</td>
+                                    <td id="wins-text">0</td>
+                                    <td id="losses-text">0</td>
+                                    <td id="guesses-text">10</td>
                                 </tr>
 
                             </tbody>
@@ -98,13 +101,6 @@
                             </tbody>
                         </table>
                     </div>
-
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h4>Letters Guessed</h4>
-                        <div id="guessedLetters"></div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -120,6 +116,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </script>
-<script type="text/javascript" src="assets/javascript/gameV2.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </html>
